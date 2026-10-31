@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en"><head><script>(function(){function chain(){var f=function(){return chain();};return new Proxy(f,{get:function(t,n){if(n==='then')return undefined;return chain();},apply:function(){return chain();}});}window.google={script:{run:chain()}};})();</script>
+<title>Legal - OKV Hotel Management System</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="vendor/bootstrap.min.css" rel="stylesheet">
+<link href="vendor/bootstrap-icons.min.css" rel="stylesheet">
+<style>
+:root{--ink:#0e2a2b;--ink2:#14393b;--paper:#f4f7f6;--white:#fff;--brass:#c8962e;--brass-d:#aa7c1e;--mint:#1f9d68;--line:#d9e3e1;--mut:#566b6a;--blue:#3b82f6;--slate:#8892a0;
+--bs-body-font-family:'Public Sans',system-ui,sans-serif;--bs-body-color:#10302f;--bs-body-bg:#fff;--bs-link-color:#0e5a5c;--bs-link-hover-color:#0e2a2b}
+html{scroll-behavior:smooth}body{font-size:1.0625rem;line-height:1.6}
+h1,h2,h3,h4,.display-font{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:800;letter-spacing:-.02em;color:var(--ink)}
+h1{font-size:clamp(2.1rem,4.6vw,3.5rem);line-height:1.05}h2{font-size:clamp(1.65rem,3vw,2.35rem);line-height:1.12}h3{font-size:1.25rem;font-weight:700}
+p{max-width:64ch}.lead{font-size:1.2rem;color:var(--mut)}
+a:focus-visible,button:focus-visible,.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--brass);outline-offset:2px}
+.btn{font-weight:600;border-radius:.6rem;padding:.7rem 1.25rem}
+.btn-brass{background:var(--brass);border-color:var(--brass);color:var(--ink)}.btn-brass:hover,.btn-brass:focus{background:var(--brass-d);border-color:var(--brass-d);color:#fff}
+.btn-ink{background:var(--ink);border-color:var(--ink);color:#fff}.btn-ink:hover{background:var(--ink2);border-color:var(--ink2);color:#fff}
+.btn-outline-ink{border:2px solid var(--ink);color:var(--ink);background:transparent}.btn-outline-ink:hover{background:var(--ink);color:#fff}
+.btn-outline-light-x{border:2px solid rgba(255,255,255,.7);color:#fff}.btn-outline-light-x:hover{background:#fff;color:var(--ink)}
+.navbar{background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.navbar-brand{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;color:var(--ink)!important;display:flex;align-items:center;gap:.55rem}
+.navbar .nav-link{color:var(--ink);font-weight:500}.navbar .nav-link:hover{color:var(--brass-d)}.navbar .nav-link.active{color:var(--brass-d);font-weight:600}
+.logo-mark{width:34px;height:34px;border-radius:9px;background:var(--ink);display:inline-flex;align-items:center;justify-content:center;color:var(--brass);font-size:1.1rem}
+section{padding:5rem 0}.alt{background:var(--paper)}.dark{background:var(--ink);color:#d7e6e4}.dark h2,.dark h3{color:#fff}
+.hero{padding:3.2rem 0 4.2rem;background:linear-gradient(180deg,#fff 0,var(--paper) 100%)}
+.hero .fine{color:var(--mut);font-size:.95rem}
+.tape{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 18px 40px -22px rgba(14,42,43,.45);overflow:hidden;font-size:.82rem}
+.tape-cap{display:flex;justify-content:space-between;align-items:center;padding:.65rem .9rem;border-bottom:1px solid var(--line);background:var(--paper);font-weight:600;color:var(--ink)}
+.tape-cap small{font-weight:500;color:var(--mut)}
+.tape-row{display:flex;border-bottom:1px solid var(--line)}.tape-row:last-child{border-bottom:0}
+.tape-lab{width:62px;flex:none;padding:.5rem .6rem;font-weight:700;color:var(--ink);border-right:1px solid var(--line);background:#fff}
+.tape-lab small{display:block;font-weight:400;color:var(--mut);font-size:.68rem}
+.tape-track{position:relative;flex:1;height:46px}.tape-days{display:flex;flex:1}.tape-days div{flex:1;text-align:center;padding:.3rem 0;line-height:1.1;border-left:1px solid var(--line);color:var(--mut)}
+.tape-days div b{display:block;color:var(--ink);font-size:.9rem}.tape-days .today,.tape-today{background:rgba(200,150,46,.14)}
+.tape-today{position:absolute;top:0;bottom:0;width:10%}
+.bar-bk{position:absolute;top:6px;height:34px;border-radius:8px;color:#fff;padding:.3rem .55rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:.76rem;transform-origin:left center;animation:slidein .7s cubic-bezier(.2,.7,.2,1) both}
+.b-in{background:var(--mint)}.b-res{background:var(--blue)}.b-out{background:var(--slate)}
+@keyframes slidein{from{transform:scaleX(0);opacity:0}to{transform:scaleX(1);opacity:1}}
+@media (prefers-reduced-motion:reduce){.bar-bk{animation:none}html{scroll-behavior:auto}}
+.tape-foot{display:flex;gap:1.1rem;flex-wrap:wrap;padding:.65rem .9rem;border-top:1px solid var(--line);background:var(--paper);color:var(--mut);font-size:.78rem}
+.tape-foot i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:.35rem}
+.trust{background:var(--ink);color:#fff;padding:1.35rem 0}.trust .item{display:flex;gap:.8rem;align-items:flex-start;padding:.35rem 0}
+.trust i{font-size:1.5rem;color:var(--brass);line-height:1}.trust b{display:block;color:#fff;font-weight:600}.trust span{color:#b9d0ce;font-size:.92rem}
+.facts{list-style:none;padding:0;margin:0}.facts li{display:flex;gap:.8rem;padding:.8rem 0;border-bottom:1px solid var(--line)}.facts li:last-child{border-bottom:0}.facts i{color:var(--mint);font-size:1.25rem;line-height:1.4}
+.step{display:flex;gap:1rem;padding:1.15rem 0;border-bottom:1px solid var(--line)}.step:last-child{border-bottom:0}
+.step .n{flex:none;width:2.6rem;height:2.6rem;border-radius:50%;background:var(--ink);color:var(--brass);font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:1.15rem;display:flex;align-items:center;justify-content:center}
+.step h3{margin:0 0 .2rem}.step p{margin:0;color:var(--mut)}
+.device{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.3rem;height:100%}
+.device i{font-size:1.8rem;color:var(--ink)}.device h3{margin:.6rem 0 .25rem;font-size:1.1rem}.device p{color:var(--mut);margin:0;font-size:.97rem}
+.lan{background:var(--ink);color:#d7e6e4;border-radius:14px;padding:1.4rem}.lan code{color:var(--brass);font-size:1rem}
+.ledger{border-top:2px solid var(--ink)}.ledger .grp{display:grid;grid-template-columns:minmax(150px,230px) 1fr;gap:1rem 2rem;padding:1.5rem 0;border-bottom:1px solid var(--line)}
+.ledger h3{margin:0}.ledger ul{margin:0;padding-left:1.1rem;columns:2;column-gap:2rem}.ledger li{margin-bottom:.35rem;break-inside:avoid}.ledger .sub{color:var(--mut);font-size:.95rem;margin:.25rem 0 0}
+@media(max-width:767px){.ledger .grp{grid-template-columns:1fr}.ledger ul{columns:1}section{padding:3.4rem 0}}
+.why-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}.why-table th,.why-table td{padding:.85rem 1rem;border-bottom:1px solid var(--line);vertical-align:top}
+.why-table th{background:var(--paper);font-size:.95rem}.why-table td:nth-child(2){background:rgba(31,157,104,.06);font-weight:500}.why-table tr:last-child td{border-bottom:0}
+.reason{padding:1.1rem 0;border-bottom:1px solid var(--line)}.reason:last-child{border-bottom:0}.reason h3{font-size:1.1rem;margin-bottom:.2rem}.reason p{margin:0;color:var(--mut)}
+.accordion{--bs-accordion-btn-focus-box-shadow:0 0 0 3px rgba(200,150,46,.5);--bs-accordion-active-bg:var(--paper);--bs-accordion-active-color:var(--ink)}
+.accordion-button{font-weight:600}
+.cta-final{background:linear-gradient(135deg,var(--ink),var(--ink2));color:#d7e6e4;padding:4.5rem 0}
+footer.site{background:#091c1d;color:#9fb6b4;padding:3rem 0 1.5rem;font-size:.95rem}footer.site a{color:#cfe0de;text-decoration:none}footer.site a:hover{color:var(--brass)}
+footer.site h4{color:#fff;font-size:1rem;font-family:'Bricolage Grotesque',sans-serif}
+.plan{border:1px solid var(--line);border-radius:16px;padding:2rem;background:#fff;height:100%;display:flex;flex-direction:column}
+.plan.best{border:2px solid var(--brass);box-shadow:0 20px 44px -26px rgba(200,150,46,.9)}
+.plan .price{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:3rem;color:var(--ink);line-height:1}.plan .price small{font-size:1rem;font-weight:500;color:var(--mut);font-family:'Public Sans',sans-serif}
+.plan ul{list-style:none;padding:0;margin:1.2rem 0 1.6rem}.plan li{display:flex;gap:.6rem;padding:.35rem 0}.plan li i{color:var(--mint)}.plan .push{margin-top:auto}
+.tag{display:inline-block;background:var(--brass);color:var(--ink);font-weight:700;font-size:.78rem;border-radius:20px;padding:.2rem .7rem;margin-bottom:.8rem}
+.tag.soft{background:var(--paper);color:var(--mut)}
+.cmp td,.cmp th{padding:.8rem 1rem;border-bottom:1px solid var(--line)}.cmp th{background:var(--paper)}.cmp .y{color:var(--mint);font-weight:700}
+.pagehead{padding:3rem 0 2.2rem;background:var(--paper);border-bottom:1px solid var(--line)}
+.bank{background:var(--paper);border:1px dashed var(--brass);border-radius:12px;padding:1rem 1.2rem}
+.modal-content{border-radius:16px;border:0}.modal-header{border-bottom:1px solid var(--line)}
+.form-label{font-weight:600;font-size:.92rem}.hp{position:absolute;left:-9999px;height:0;overflow:hidden}
+.dl-btn{font-size:1.15rem;padding:.9rem 1.6rem}
+.sticky-cta{position:fixed;right:16px;bottom:16px;z-index:1030;display:none}
+</style>
+
+<style>.legal h2{font-size:1.35rem;margin-top:2rem}.legal p,.legal li{max-width:75ch}.legal nav a{display:block;padding:.35rem .6rem;border-radius:6px;text-decoration:none;color:var(--ink)}.legal nav a.on{background:var(--paper);font-weight:600;border-left:3px solid var(--brass)}</style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg sticky-top" aria-label="Main">
+  <div class="container">
+    <a class="navbar-brand" href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec" target="_top"><span class="logo-mark"><i class="bi bi-key-fill"></i></span>OKV Hotel</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Open menu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec#about" target="_top" data-scroll="about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec#how" target="_top" data-scroll="how">How it works</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec#features" target="_top" data-scroll="features">Features</a></li>
+        <li class="nav-item"><a class="nav-link " href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=pricing" target="_top">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=demo" target="_top">Live demo</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec#faq" target="_top" data-scroll="faq">FAQ</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><button class="btn btn-brass" onclick="openTrial()">Free 12-day trial</button></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="pagehead"><div class="container"><h1 class="fs-1">
+Disclaimer
+</h1><p class="mb-0 text-secondary">Last updated 5 October 2026</p></div></header>
+<main class="container py-5 legal"><div class="row g-5">
+  <div class="col-lg-3"><nav aria-label="Legal pages">
+    <a href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=privacy" target="_top" class="">Privacy policy</a>
+    <a href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=terms" target="_top" class="">Terms of service</a>
+    <a href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=cookies" target="_top" class="">Cookie policy</a>
+    <a href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=refund" target="_top" class="">Refund policy</a>
+    <a href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=licence" target="_top" class="">Software licence</a>
+    <a href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=disclaimer" target="_top" class="on">Disclaimer</a></nav></div>
+  <div class="col-lg-9">
+
+
+<h2>1. General</h2><p>The information on this website is for general information about the OKV Hotel Management System. We try to keep it correct and current but cannot promise it is always complete.</p>
+<h2>2. Software</h2><p>The software is provided "as is". Screens shown on this website and in the demo use sample data and may differ slightly from the version you install.</p>
+<h2>3. Tax and accounting</h2><p>The software lets you set VAT, service charge and other tax lines and produces reports. It is a tool, not tax, legal or accounting advice. You are responsible for charging the correct taxes and keeping proper records for your hotel.</p>
+<h2>4. Third parties</h2><p>Google, Paystack, Windows, Mac, Android, iPhone, WhatsApp and other names belong to their owners. We are not affiliated with them. Links to or integrations with third-party services are subject to those services' terms.</p>
+<h2>5. Availability</h2><p>We do not promise that this website or our payment and activation services will always be available or free of error.</p>
+<h2>6. Contact</h2><p>Questions about this notice: <b>owner@okv.test</b>.</p>
+
+
+  </div></div></main>
+
+<footer class="site">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-5">
+        <div class="navbar-brand text-white mb-2" style="display:flex;align-items:center;gap:.55rem;font-family:'Bricolage Grotesque',sans-serif;font-weight:800"><span class="logo-mark"><i class="bi bi-key-fill"></i></span><span style="color:#fff">OKV Hotel Management System</span></div>
+        <p class="mb-2">Booking, room calendar, housekeeping, billing and reports for hotels and guest houses. Built in Nigeria by OKV Technology Consults.</p>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h4>Explore</h4>
+        <ul class="list-unstyled mb-0 lh-lg">
+          <li><a href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec#features" target="_top" data-scroll="features">Features</a></li>
+          <li><a href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=pricing" target="_top">Pricing</a></li>
+          <li><a href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=pricing#install" target="_top">Installation service</a></li>
+          <li><a href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=demo" target="_top">Live demo</a></li>
+          <li><a href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec#faq" target="_top" data-scroll="faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-4">
+        <h4>Talk to us</h4>
+        <ul class="list-unstyled mb-0 lh-lg">
+          <li><i class="bi bi-whatsapp me-2"></i><a href="https://wa.me/2348104141138" target="_blank" rel="noopener">+234 810 414 1138</a></li>
+          <li><i class="bi bi-envelope me-2"></i><a href="mailto:owner@okv.test">owner@okv.test</a></li>
+          <li><i class="bi bi-globe me-2"></i>www.okvtechnology.com</li>
+          
+          <li class="mt-2"><button class="btn btn-sm btn-outline-light-x" onclick="openContact()">Send us a message</button></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-secondary mt-4">
+    <div class="d-flex flex-wrap gap-3 small mb-2"><a href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=privacy" target="_top">Privacy policy</a><a href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=terms" target="_top">Terms of service</a><a href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=cookies" target="_top">Cookie policy</a><a href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=refund" target="_top">Refund policy</a><a href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=licence" target="_top">Software licence</a><a href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=disclaimer" target="_top">Disclaimer</a></div>
+    <div class="d-flex flex-wrap justify-content-between small"><span>&copy; 2026 OKV Technology Consults. All rights reserved.</span><span>Version 2.0</span></div>
+  </div>
+</footer>
+
+
+<script src="vendor/bootstrap.bundle.min.js"></script>
+
+<!-- cookie notice -->
+<div id="cookieBar" class="position-fixed bottom-0 start-0 end-0 p-3" style="z-index:1080;display:none">
+  <div class="container"><div class="bg-white border rounded-3 shadow p-3 d-flex flex-wrap gap-3 align-items-center justify-content-between">
+    <p class="mb-0 small" style="max-width:70ch">This website uses only the storage it needs to work, such as remembering this notice. We do not run advertising or tracking cookies. Read our <a href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=cookies" target="_top">cookie policy</a> and <a href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=privacy" target="_top">privacy policy</a>.</p>
+    <button class="btn btn-ink btn-sm" onclick="ackCookies()">Got it</button>
+  </div></div>
+</div>
+
+<!-- free trial -->
+<div class="modal fade" id="trialModal" tabindex="-1" aria-labelledby="trialTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"><div class="modal-content">
+  <div class="modal-header"><h2 class="modal-title fs-4" id="trialTitle">Get your free 12-day trial</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+  <div class="modal-body">
+    <form id="trialForm" novalidate onsubmit="return sendTrial(event)">
+      <p class="text-secondary">Tell us a little about your hotel. We email you the download link, and you can download straight away.</p>
+      <div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>
+      <input type="hidden" name="platform" id="t_platform" value="windows">
+      <div class="row g-3">
+        <div class="col-12"><label class="form-label" for="t_hotel">Hotel name</label><input class="form-control" id="t_hotel" name="hotel" required autocomplete="organization"></div>
+        <div class="col-md-6"><label class="form-label" for="t_name">Your name</label><input class="form-control" id="t_name" name="name" required autocomplete="name"></div>
+        <div class="col-md-6"><label class="form-label" for="t_phone">Phone or WhatsApp</label><input class="form-control" id="t_phone" name="phone" required inputmode="tel" autocomplete="tel"></div>
+        <div class="col-12"><label class="form-label" for="t_email">Email address</label><input class="form-control" id="t_email" name="email" type="email" required autocomplete="email"><div class="form-text">Your download link and later your activation code come here.</div></div>
+        <div class="col-md-5"><label class="form-label" for="t_city">City or state</label><input class="form-control" id="t_city" name="city" autocomplete="address-level2"></div>
+        <div class="col-md-3"><label class="form-label" for="t_rooms">Rooms</label><input class="form-control" id="t_rooms" name="rooms" type="number" min="1" inputmode="numeric"></div>
+        <div class="col-md-4"><label class="form-label" for="t_heard">How did you hear of us?</label><select class="form-select" id="t_heard" name="heard"><option value="">Choose</option><option>WhatsApp</option><option>Facebook or Instagram</option><option>A friend</option><option>Google search</option><option>Another hotel</option><option>Other</option></select></div>
+        <div class="col-12 form-check ms-1"><input class="form-check-input" type="checkbox" id="t_ok" required><label class="form-check-label small" for="t_ok">I agree to the <a href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=terms" target="_top">terms</a> and the <a href="https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=privacy" target="_top">privacy policy</a>.</label></div>
+      </div>
+      <div class="alert alert-danger mt-3 d-none" id="trialErr" role="alert"></div>
+      <button class="btn btn-brass w-100 mt-3" id="trialBtn" type="submit">Send me the free trial</button>
+    </form>
+    <div id="trialDone" class="d-none text-center py-2">
+      <div class="display-5 text-success"><i class="bi bi-check-circle-fill"></i></div>
+      <h3 class="mt-2">You are all set</h3>
+      <p class="mx-auto" id="trialMsg"></p>
+      <div class="d-flex flex-wrap gap-2 justify-content-center"><a id="dlWin" class="btn btn-brass dl-btn d-none" target="_blank" rel="noopener"><i class="bi bi-windows me-2"></i>Download for Windows</a><a id="dlMac" class="btn btn-ink dl-btn d-none" target="_blank" rel="noopener"><i class="bi bi-apple me-2"></i>Download for Mac</a></div>
+      <p class="small text-secondary mt-3 mb-0">Windows 7, 8, 10 and 11 (32-bit and 64-bit) and Mac. Nothing else to install.</p>
+    </div>
+  </div>
+</div></div></div>
+
+<!-- buy -->
+<div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="buyTitle" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"><div class="modal-content">
+  <div class="modal-header"><h2 class="modal-title fs-4" id="buyTitle">Buy the full version for ₦120,000</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+  <div class="modal-body">
+    <div id="buyChoose">
+      <p class="text-secondary">One payment, no monthly fees. After payment you get an activation code by email. Choose how you want to pay.</p>
+      <ul class="nav nav-pills mb-3" id="payTabs" role="tablist"></ul>
+      <div id="payPanes"></div>
+    </div>
+    <div id="buyDone" class="d-none text-center py-3">
+      <div class="display-5 text-success"><i class="bi bi-check-circle-fill"></i></div>
+      <h3 class="mt-2">Thank you</h3><p class="mx-auto" id="buyMsg"></p>
+      <p class="small text-secondary mb-0">When the code arrives, open the software, go to <b>License and activation</b>, type the code and press <b>Activate</b>.</p>
+    </div>
+  </div>
+</div></div></div>
+
+<!-- installation service -->
+<div class="modal fade" id="installModal" tabindex="-1" aria-labelledby="installTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"><div class="modal-content">
+  <div class="modal-header"><h2 class="modal-title fs-4" id="installTitle">Request installation</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+  <div class="modal-body">
+    <form id="installForm" novalidate onsubmit="return sendInstall(event)">
+      <p class="text-secondary">We install and set up the system for you, remotely or at your hotel. We will call to agree a time and price.</p>
+      <div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>
+      <div class="row g-3">
+        <div class="col-12"><label class="form-label" for="i_hotel">Hotel name</label><input class="form-control" id="i_hotel" name="hotel" required></div>
+        <div class="col-md-6"><label class="form-label" for="i_name">Your name</label><input class="form-control" id="i_name" name="name" required></div>
+        <div class="col-md-6"><label class="form-label" for="i_phone">Phone or WhatsApp</label><input class="form-control" id="i_phone" name="phone" required inputmode="tel"></div>
+        <div class="col-12"><label class="form-label" for="i_email">Email address</label><input class="form-control" id="i_email" name="email" type="email" required></div>
+        <div class="col-md-6"><label class="form-label" for="i_loc">Where is the hotel?</label><input class="form-control" id="i_loc" name="location" placeholder="City and area"></div>
+        <div class="col-md-6"><label class="form-label" for="i_mode">How should we install?</label><select class="form-select" id="i_mode" name="mode"><option value="remote">Remotely (online)</option><option value="onsite">At the hotel</option></select></div>
+        <div class="col-md-6"><label class="form-label" for="i_date">Preferred date</label><input class="form-control" id="i_date" name="date" type="date"></div>
+        <div class="col-12"><label class="form-label" for="i_notes">Anything we should know?</label><textarea class="form-control" id="i_notes" name="notes" rows="3" placeholder="Number of rooms, computers, printers"></textarea></div>
+      </div>
+      <div class="alert alert-danger mt-3 d-none" id="installErr" role="alert"></div>
+      <button class="btn btn-brass w-100 mt-3" id="installBtn" type="submit">Send request</button>
+    </form>
+    <div id="installDone" class="d-none text-center py-3"><div class="display-5 text-success"><i class="bi bi-check-circle-fill"></i></div><h3 class="mt-2">Request received</h3><p class="mx-auto" id="installMsg"></p></div>
+  </div>
+</div></div></div>
+
+<!-- contact -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"><div class="modal-content">
+  <div class="modal-header"><h2 class="modal-title fs-4" id="contactTitle">Send us a message</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+  <div class="modal-body">
+    <form id="contactForm" novalidate onsubmit="return sendContact(event)">
+      <div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>
+      <div class="row g-3">
+        <div class="col-md-6"><label class="form-label" for="c_name">Your name</label><input class="form-control" id="c_name" name="name" required></div>
+        <div class="col-md-6"><label class="form-label" for="c_phone">Phone or WhatsApp</label><input class="form-control" id="c_phone" name="phone" inputmode="tel"></div>
+        <div class="col-12"><label class="form-label" for="c_email">Email address</label><input class="form-control" id="c_email" name="email" type="email" required></div>
+        <div class="col-12"><label class="form-label" for="c_subject">Subject</label><input class="form-control" id="c_subject" name="subject" placeholder="Question about..."></div>
+        <div class="col-12"><label class="form-label" for="c_msg">Message</label><textarea class="form-control" id="c_msg" name="message" rows="4" required></textarea></div>
+      </div>
+      <div class="alert alert-danger mt-3 d-none" id="contactErr" role="alert"></div>
+      <button class="btn btn-brass w-100 mt-3" id="contactBtn" type="submit">Send message</button>
+    </form>
+    <div id="contactDone" class="d-none text-center py-3"><div class="display-5 text-success"><i class="bi bi-check-circle-fill"></i></div><h3 class="mt-2">Message sent</h3><p>We will reply to your email address shortly.</p></div>
+  </div>
+</div></div></div>
+
+<script>
+const CFG = {"company":"OKV Technology Consults","product":"OKV Hotel Management System","price":120000,"currency":"₦","trial_days":12,"sla_hours":24,"whatsapp":"2348104141138","phone":"+234 810 414 1138","email":"owner@okv.test","website":"www.okvtechnology.com","address":"","bank_name":"","account_name":"","account_number":"","banks":[],"version":"2.0","guarantee":"Try every feature free for 12 days before you pay anything.","hero_title":"Run your hotel from any browser, on your own computer.","hero_sub":"Bookings, room calendar, housekeeping, billing and reports for hotels and guest houses. Pay once. No monthly fees. Works without internet.","promo_banner":"","old_price":0,"install_title":"We can install it for you","install_text":"OKV Technology Consults installs and sets up the system at your hotel, remotely or on site: rooms, rates, staff accounts, printing and phones on your Wi-Fi.","install_price_text":"Contact us for a quote","announcement":"","payment_note":"Use your hotel name as the transfer narration.","manual_enabled":false,"paystack_enabled":false,"auto_approve":false,"download_windows":false,"download_mac":false,"download_ready":false};
+const LINKS = {"home":"https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec","pricing":"https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=pricing","demo":"https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=demo","admin":"https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=admin","base":"https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec","privacy":"https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=privacy","terms":"https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=terms","cookies":"https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=cookies","refund":"https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=refund","licence":"https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=licence","disclaimer":"https://script.google.com/macros/s/AKfycbxhmWXrAt8I6OpqdaoaiQuqMCTZXgvxj0czeQPWdbZE6AKXTspJu_fNmLiFtvgkE3fE/exec?page=disclaimer"};
+const $ = (s) => document.querySelector(s);
+const fmt = (n) => CFG.currency + Number(n).toLocaleString('en-US');
+function modal(id) { return bootstrap.Modal.getOrCreateInstance(document.getElementById(id)); }
+function formData(id) { const o = {}; document.querySelectorAll('#' + id + ' [name]').forEach(function (e) { o[e.name] = e.value; }); return o; }
+function showErr(id, m) { const e = $('#' + id); e.textContent = m; e.classList.toggle('d-none', !m); }
+function setBusy(btn, on, label) { btn.disabled = on; if (label) btn.textContent = on ? 'Please wait...' : label; }
+function runServer(fn, data, ok, fail) { google.script.run.withSuccessHandler(ok).withFailureHandler(function (e) { fail((e && e.message) || 'Something went wrong. Please try again.'); })[fn](data); }
+function validate(form) { let first = null; form.querySelectorAll('[required]').forEach(function (e) { const bad = e.type === 'checkbox' ? !e.checked : !String(e.value).trim() || (e.type === 'email' && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e.value)); e.classList.toggle('is-invalid', bad); if (bad && !first) first = e; }); if (first) first.focus(); return !first; }
+function toggleModals(formId, doneId) { $('#' + formId).classList.add('d-none'); $('#' + doneId).classList.remove('d-none'); }
+function resetModal(formId, doneId, errId) { $('#' + formId).classList.remove('d-none'); $('#' + doneId).classList.add('d-none'); showErr(errId, ''); document.getElementById(formId).querySelectorAll('.is-invalid').forEach(function (e) { e.classList.remove('is-invalid'); }); }
+
+function guessOS() { const u = (navigator.userAgent || '') + ' ' + (navigator.platform || ''); return /Mac|iPhone|iPad/.test(u) && !/Windows/.test(u) ? 'mac' : 'windows'; }
+function openTrial(os) { resetModal('trialForm', 'trialDone', 'trialErr'); $('#t_platform').value = os || guessOS(); modal('trialModal').show(); }
+function openContact() { resetModal('contactForm', 'contactDone', 'contactErr'); modal('contactModal').show(); }
+function openInstall() { resetModal('installForm', 'installDone', 'installErr'); modal('installModal').show(); }
+function sendTrial(ev) {
+  ev.preventDefault(); const f = $('#trialForm'); showErr('trialErr', ''); if (!validate(f)) return false;
+  const b = $('#trialBtn'); setBusy(b, true, 'Send me the free trial');
+  runServer('submitTrial', formData('trialForm'), function (r) {
+    setBusy(b, false, 'Send me the free trial');
+    if (!r || !r.ok) { showErr('trialErr', (r && r.error) || 'Something went wrong.'); return; }
+    toggleModals('trialForm', 'trialDone');
+    $('#trialMsg').textContent = r.downloadUrl ? 'Your download is ready, and we have also emailed you the link.' : 'We received your request and will email your download link shortly.';
+    const w = $('#dlWin'), m = $('#dlMac'); if (r.windows) { w.href = r.windows; w.classList.remove('d-none'); } if (r.mac) { m.href = r.mac; m.classList.remove('d-none'); }
+    if (r.platform === 'mac' && r.mac) m.parentNode.insertBefore(m, w);
+  }, function (m) { setBusy(b, false, 'Send me the free trial'); showErr('trialErr', m); });
+  return false;
+}
+function sendInstall(ev) {
+  ev.preventDefault(); const f = $('#installForm'); showErr('installErr', ''); if (!validate(f)) return false;
+  const b = $('#installBtn'); setBusy(b, true, 'Send request');
+  runServer('submitInstall', formData('installForm'), function (r) {
+    setBusy(b, false, 'Send request'); if (!r || !r.ok) { showErr('installErr', (r && r.error) || 'Something went wrong.'); return; }
+    toggleModals('installForm', 'installDone'); $('#installMsg').textContent = 'Thank you. Your reference is ' + r.ref + '. We will call you to agree the time and price.';
+  }, function (m) { setBusy(b, false, 'Send request'); showErr('installErr', m); });
+  return false;
+}
+function sendContact(ev) {
+  ev.preventDefault(); const f = $('#contactForm'); showErr('contactErr', ''); if (!validate(f)) return false;
+  const b = $('#contactBtn'); setBusy(b, true, 'Send message');
+  runServer('submitContact', formData('contactForm'), function (r) {
+    setBusy(b, false, 'Send message'); if (!r || !r.ok) { showErr('contactErr', (r && r.error) || 'Something went wrong.'); return; } toggleModals('contactForm', 'contactDone');
+  }, function (m) { setBusy(b, false, 'Send message'); showErr('contactErr', m); });
+  return false;
+}
+
+/* buying: Paystack and/or bank transfer, depending on what the owner switched on */
+let RECEIPT = null;
+function readReceipt(inp) {
+  RECEIPT = null; const f = inp.files[0]; if (!f) return;
+  if (f.size > 4 * 1024 * 1024) { showErr('buyErr2', 'That file is over 4 MB. Please choose a smaller photo or PDF.'); inp.value = ''; return; }
+  const r = new FileReader(); r.onload = function () { RECEIPT = { name: f.name, mime: f.type, data: String(r.result).split(',')[1] }; }; r.readAsDataURL(f);
+}
+function contactFields(p) {
+  return '<div class="row g-3"><div class="col-12"><label class="form-label" for="' + p + 'hotel">Hotel name</label><input class="form-control" id="' + p + 'hotel" name="hotel" required></div>' +
+    '<div class="col-md-6"><label class="form-label" for="' + p + 'name">Your name</label><input class="form-control" id="' + p + 'name" name="name" required></div>' +
+    '<div class="col-md-6"><label class="form-label" for="' + p + 'phone">Phone or WhatsApp</label><input class="form-control" id="' + p + 'phone" name="phone" required inputmode="tel"></div>' +
+    '<div class="col-12"><label class="form-label" for="' + p + 'email">Email for the activation code</label><input class="form-control" id="' + p + 'email" name="email" type="email" required></div></div>';
+}
+function openBuy() {
+  $('#buyChoose').classList.remove('d-none'); $('#buyDone').classList.add('d-none');
+  const tabs = [], panes = [];
+  if (CFG.paystack_enabled) {
+    tabs.push(['psk', 'Pay online (instant code)']);
+    panes.push('<div class="tab-pane fade" id="pane-psk"><p>Pay with your card, bank transfer or USSD on Paystack\'s secure page. <b>Your activation code appears on screen and in your email straight after payment.</b></p>' +
+      '<form id="pskForm" novalidate onsubmit="return sendPaystack(event)"><div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>' + contactFields('p_') +
+      '<div class="alert alert-danger mt-3 d-none" id="pskErr" role="alert"></div><button class="btn btn-brass w-100 mt-3" id="pskBtn" type="submit">Pay ' + fmt(CFG.price) + ' on Paystack</button></form>' +
+      '<div id="pskGo" class="d-none text-center py-3"><p>Your payment page is ready.</p><a id="pskLink" class="btn btn-brass dl-btn" target="_blank" rel="noopener">Open the secure payment page</a><p class="small text-secondary mt-3">It opens in a new tab. When you finish, that tab shows your code.</p></div></div>');
+  }
+  if (CFG.manual_enabled) {
+    const banks = CFG.banks.map(function (b) { return '<div class="bank mb-2"><b>' + esc(b.bank) + '</b><br>Account name: <b>' + esc(b.name) + '</b><br>Account number: <b>' + esc(b.number) + '</b></div>'; }).join('');
+    tabs.push(['man', 'Bank transfer']);
+    panes.push('<div class="tab-pane fade" id="pane-man"><p><b>1.</b> Pay <b>' + fmt(CFG.price) + '</b> to:</p>' + banks + (CFG.payment_note ? '<p class="small text-secondary">' + esc(CFG.payment_note) + '</p>' : '') +
+      '<p><b>2.</b> Fill in the form and upload your receipt. ' + (CFG.auto_approve ? 'Your code is emailed straight away.' : 'We email your code within <b>' + CFG.sla_hours + ' hours</b>, usually much sooner.') + '</p>' +
+      '<form id="manForm" novalidate onsubmit="return sendManual(event)"><div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>' + contactFields('m_') +
+      '<div class="row g-3 mt-0"><div class="col-md-4"><label class="form-label" for="m_amount">Amount paid</label><input class="form-control" id="m_amount" name="amount" type="number" required value="' + CFG.price + '"></div>' +
+      '<div class="col-md-4"><label class="form-label" for="m_paid">Date paid</label><input class="form-control" id="m_paid" name="paid_on" type="date"></div>' +
+      '<div class="col-md-4"><label class="form-label" for="m_ref">Bank reference</label><input class="form-control" id="m_ref" name="bank_ref"></div>' +
+      '<div class="col-12"><label class="form-label" for="m_file">Payment receipt (photo or PDF, up to 4 MB)</label><input class="form-control" id="m_file" type="file" accept="image/*,application/pdf" onchange="readReceipt(this)"></div>' +
+      '<div class="col-12"><label class="form-label" for="m_notes">Notes (optional)</label><textarea class="form-control" id="m_notes" name="notes" rows="2"></textarea></div></div>' +
+      '<div class="alert alert-danger mt-3 d-none" id="buyErr2" role="alert"></div><button class="btn btn-brass w-100 mt-3" id="manBtn" type="submit">Send my receipt</button></form></div>');
+  }
+  if (!tabs.length) { tabs.push(['none', 'Contact us']); panes.push('<div class="tab-pane fade" id="pane-none"><p>To pay, please message us on WhatsApp and we will send the payment details.</p><a class="btn btn-brass" target="_blank" rel="noopener" href="https://wa.me/' + CFG.whatsapp + '">Chat on WhatsApp</a></div>'); }
+  $('#payTabs').innerHTML = tabs.map(function (t, i) { return '<li class="nav-item" role="presentation"><button class="nav-link ' + (i ? '' : 'active') + '" data-bs-toggle="pill" data-bs-target="#pane-' + t[0] + '" type="button" role="tab">' + t[1] + '</button></li>'; }).join('');
+  $('#payPanes').innerHTML = '<div class="tab-content">' + panes.join('') + '</div>';
+  const first = document.querySelector('#payPanes .tab-pane'); if (first) first.classList.add('show', 'active');
+  modal('buyModal').show();
+}
+function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+function sendPaystack(ev) {
+  ev.preventDefault(); const f = $('#pskForm'); showErr('pskErr', ''); if (!validate(f)) return false;
+  const b = $('#pskBtn'); setBusy(b, true, 'Pay ' + fmt(CFG.price) + ' on Paystack');
+  runServer('startPaystack', formData('pskForm'), function (r) {
+    setBusy(b, false, 'Pay ' + fmt(CFG.price) + ' on Paystack'); if (!r || !r.ok || !r.url) { showErr('pskErr', (r && r.error) || 'Something went wrong.'); return; }
+    f.classList.add('d-none'); $('#pskGo').classList.remove('d-none'); $('#pskLink').href = r.url;
+  }, function (m) { setBusy(b, false, 'Pay ' + fmt(CFG.price) + ' on Paystack'); showErr('pskErr', m); });
+  return false;
+}
+function sendManual(ev) {
+  ev.preventDefault(); const f = $('#manForm'); showErr('buyErr2', ''); if (!validate(f)) return false;
+  if (!RECEIPT) { showErr('buyErr2', 'Please choose your payment receipt file.'); return false; }
+  const b = $('#manBtn'); setBusy(b, true, 'Send my receipt'); const d = formData('manForm'); d.receipt = RECEIPT;
+  runServer('submitPurchase', d, function (r) {
+    setBusy(b, false, 'Send my receipt'); if (!r || !r.ok) { showErr('buyErr2', (r && r.error) || 'Something went wrong.'); return; }
+    $('#buyChoose').classList.add('d-none'); $('#buyDone').classList.remove('d-none'); $('#buyMsg').textContent = (r.message || '') + ' Your reference is ' + r.ref + '.';
+  }, function (m) { setBusy(b, false, 'Send my receipt'); showErr('buyErr2', m); });
+  return false;
+}
+
+/* cookie notice, smooth scrolling */
+function ackCookies() { try { localStorage.setItem('okv_cookie_ok', '1'); } catch (e) { /* storage blocked: the notice just reappears */ } $('#cookieBar').style.display = 'none'; }
+(function () { let seen = false; try { seen = localStorage.getItem('okv_cookie_ok') === '1'; } catch (e) { /* ignore */ } if (!seen) $('#cookieBar').style.display = 'block'; })();
+document.addEventListener('click', function (e) {
+  const a = e.target.closest('a[data-scroll]'); if (!a) return;
+  const el = document.getElementById(a.getAttribute('data-scroll')); if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); }
+});
+</script>
+
+</body></html>
